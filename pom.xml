@@ -260,11 +260,20 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
-            <plugin>
+            	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<warName>GarageParking</warName>
+					<outputDirectory>C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps</outputDirectory>
+				</configuration>
+			</plugin>
+           <!--  <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>                
-            </plugin>
+            </plugin> -->
         </plugins>
         <finalName>${project.artifactId}</finalName>
     </build>
